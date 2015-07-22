@@ -42,7 +42,6 @@ Data <- as.data.frame(Data); # For better column indexing
 # - Extracts only the measurements on the mean and standard deviation for each measurement. - #
 
 # Import\Load
-#setwd(paste(getwd(),"/UCI HAR Dataset/",sep=""));
 features <- data.table(read.table(file = "features.txt", stringsAsFactors = F));
 
 # Brief formatting
