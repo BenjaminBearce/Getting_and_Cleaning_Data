@@ -7,15 +7,17 @@ library(dplyr); library(tidyr);library(data.table);
 # - Merge the trainging and the test sets to create one data set - # 
 
 # Import\Load
-setwd("~/GitHub/Getting_and_Cleaning_Data/UCI HAR Dataset/test");
+setwd(paste(getwd(),"/UCI HAR Dataset/test/",sep=""));
 sub_test <- data.table(read.table(file = "subject_test.txt")); 
 X_test <- data.table(read.table(file = "X_test.txt"));
 Y_test <- data.table(read.table(file = "y_test.txt"));
+setwd("../../");
 
-setwd("~/GitHub/Getting_and_Cleaning_Data/UCI HAR Dataset/train");
+setwd(paste(getwd(),"/UCI HAR Dataset/train/",sep=""));
 sub_train <- data.table(read.table(file = "subject_train.txt"));
 X_train <- data.table(read.table(file = "X_train.txt"));
 Y_train <- data.table(read.table(file = "y_train.txt"));
+setwd("../");
 # Merge
 
         # 1) To Merge we need to gather the test and train data into their respective groups
@@ -40,7 +42,7 @@ Data <- as.data.frame(Data); # For better column indexing
 # - Extracts only the measurements on the mean and standard deviation for each measurement. - #
 
 # Import\Load
-setwd("~/GitHub/Getting_and_Cleaning_Data/UCI HAR Dataset");
+#setwd(paste(getwd(),"/UCI HAR Dataset/",sep=""));
 features <- data.table(read.table(file = "features.txt", stringsAsFactors = F));
 
 # Brief formatting
