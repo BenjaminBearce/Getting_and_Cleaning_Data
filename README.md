@@ -1,8 +1,20 @@
 # Getting_and_Cleaning_Data
-Data Science Specialization
+Data Science Specialization  
+  
+I'm going to keep this as simple as possible. Below are the course instructions. I will tell you what row numbers in my code go with which question or task.
 
 1) Merges the training and the test sets to create one data set.  
+rows: 21-40
+
 2) Extracts only the measurements on the mean and standard deviation for each measurement.  
+rows: 42-54
+
 3) Uses descriptive activity names to name the activities in the data set.  
+rows: 57-67
+
 4) Appropriately labels the data set with descriptive variable names.  
+rows: 68-72
+
 5) From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.  
+rows: 73-75
+
