@@ -2,10 +2,10 @@
 
 This is largely the code book from http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones  
 
-1 - Below is a description of the experiment and relevant variables used in this code.
-2 - After the first sectionm, there will be a brief description of the tidy data set created in run_analysis.R
+1 - Below is a description of the experiment and relevant variables used in this code.  
+2 - After the first sectionm, there will be a brief description of the tidy data set created in run_analysis.R  
 
-[Section 1]
+[Section 1]  
 Samsung Galaxy S smartphone Accelerometer Data:
 ==================================================================
 
@@ -80,5 +80,5 @@ tBodyAccJerkMean
 tBodyGyroMean
 tBodyGyroJerkMean
 
-[Section2]
+[Section2]  
 The resulting data ("Data") from run_analysis.R has been created by merging data sets (detailed in ReadMe). Following the merge, columns were selected based on wheteher they had "mean" or "std" in the name. Regular expressions were used to determine if any form of these words were in the column name (ie. Capitals). Finally the data was grouped by activity and subject and means of the columns were taken. The final data set has 88 columns with names that describe themselves what they measure. There were 180 unique activity(6)*subject(30) pairs. Units and details of what each column means are available above.
